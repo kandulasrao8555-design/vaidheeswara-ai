@@ -7,7 +7,8 @@ st.title("⚡ Code X AI")
 st.subheader("Executive Console")
 
 # Secure API Key access (Linked via Streamlit Secrets)
-api_key = st.secrets.get("AIzaSyDs3SGstUP9LH86zqLyfpMjhS2uWzIaH2o")
+
+api_key = st.secrets.get("GEMINI_API_KEY")
 
 if not api_key:
     st.error("API Key not detected! Please configure it in Streamlit Cloud settings.")
